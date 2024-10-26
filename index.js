@@ -4,8 +4,8 @@ const core = require('@actions/core');
 
 const version = process.argv[2]; // Получение версии OpenWRT из аргумента командной строки
 
-const SNAPSHOT_TARGETS_TO_BUILD = ['ramips'];
-const SNAPSHOT_SUBTARGETS_TO_BUILD = ['mt7621'];
+const SNAPSHOT_TARGETS_TO_BUILD = ['qualcommax'];
+const SNAPSHOT_SUBTARGETS_TO_BUILD = ['ipq807x'];
 
 if (!version) {
   core.setFailed('Version argument is required');
